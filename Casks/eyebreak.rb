@@ -17,9 +17,10 @@ cask "eyebreak" do
   app "EyeBreak.app"
 
   # The app isn't notarized by Apple, so Gatekeeper would block the first launch.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/EyeBreak.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-dr", "com.apple.quarantine", "{{appdir}}/EyeBreak.app"],
+        must_succeed: false
   end
 
   uninstall quit: "com.jasurito.EyeBreak"
