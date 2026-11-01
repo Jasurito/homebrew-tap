@@ -1,6 +1,6 @@
 cask "eyebreak" do
-  version "1.0.0"
-  sha256 "5f86c21a39aa886a0963f58b334e43c962730d798b03f585a8cbb4703d1ba1ba"
+  version "1.1.0"
+  sha256 "93073447a5db525a5349d3ebc9456117f538bedc881a812102a21031b9ed17a4"
 
   url "https://github.com/Jasurito/EyeBreak/releases/download/v#{version}/EyeBreak-#{version}.zip"
   name "EyeBreak"
