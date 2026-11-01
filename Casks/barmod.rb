@@ -1,6 +1,6 @@
 cask "barmod" do
-  version "0.1.1"
-  sha256 "d5809ae8ac8b74180fbc71e65e6ceba6bde6486cc351e4714e0fd5897ad3ea39"
+  version "0.1.2"
+  sha256 "1aced4d753f188c5f3bdb00990272caebc1412fc3ac1ae6ecaa3dd8fee5c25c8"
 
   url "https://github.com/Jasurito/BarMod/releases/download/v#{version}/BarMod-#{version}.zip"
   name "BarMod"
