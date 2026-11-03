@@ -1,6 +1,6 @@
 cask "eyebreak" do
-  version "1.1.0"
-  sha256 "93073447a5db525a5349d3ebc9456117f538bedc881a812102a21031b9ed17a4"
+  version "1.2.0"
+  sha256 "00369accfee1b88ad9817989f9d134830df7b00e32bb7fa5852cf66f144622ce"
 
   url "https://github.com/Jasurito/EyeBreak/releases/download/v#{version}/EyeBreak-#{version}.zip"
   name "EyeBreak"
@@ -25,5 +25,8 @@ cask "eyebreak" do
 
   uninstall quit: "com.jasurito.EyeBreak"
 
-  zap trash: "~/Library/Preferences/com.jasurito.EyeBreak.plist"
+  zap trash: [
+    "~/Library/Application Support/EyeBreak",
+    "~/Library/Preferences/com.jasurito.EyeBreak.plist",
+  ]
 end
